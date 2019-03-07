@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/header'
 import Form from './components/form'
 import Weather from './components/weather'
+import './App.scss'
 
 const Api_Key = "11ad8d59c1ee2b70b252d426d3c7555c";
   class App extends React.Component {
@@ -35,7 +36,7 @@ const Api_Key = "11ad8d59c1ee2b70b252d426d3c7555c";
 
   render() {
     return (
-      <div>
+      <div className='home'>
         <Header/>
         <Form loadWeather={this.getWeather} />
         <Weather
